@@ -1,4 +1,4 @@
-module gopkg.in/auth0.v5
+module gopkg.in/jben94/auth0.v5
 
 go 1.12
 

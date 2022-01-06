@@ -140,13 +140,13 @@ func Wrap(base *http.Client, tokenSource oauth2.TokenSource, options ...Option) 
 	return client
 }
 
-func ClientCredentials(ctx context.Context, uri, clientID, clientSecret string) oauth2.TokenSource {
+func ClientCredentials(ctx context.Context, uri, audience string, clientID, clientSecret string) oauth2.TokenSource {
 	return (&clientcredentials.Config{
 		ClientID:     clientID,
 		ClientSecret: clientSecret,
 		TokenURL:     uri + "/oauth/token",
 		EndpointParams: url.Values{
-			"audience": {uri + "/api/v2/"},
+			"audience": {audience},
 		},
 	}).TokenSource(ctx)
 }

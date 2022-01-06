@@ -46,9 +46,13 @@ func WithUserAgent(userAgent string) ManagementOption {
 
 // WithClientCredentials configures management to authenticate using the client
 // credentials authentication flow.
-func WithClientCredentials(clientID, clientSecret string) ManagementOption {
+func WithClientCredentials(clientID, clientSecret string, audience string) ManagementOption {
 	return func(m *Management) {
-		m.tokenSource = client.ClientCredentials(m.ctx, m.url.String(), clientID, clientSecret)
+		if audience == "" {
+			audience = m.url.String() + "/api/v2/"
+		}
+
+		m.tokenSource = client.ClientCredentials(m.ctx, m.url.String(), audience, clientID, clientSecret)
 	}
 }
 
