@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"gopkg.in/auth0.v5/internal/tag"
+	"gopkg.in/jben94/auth0.v5/internal/tag"
 )
 
 const (

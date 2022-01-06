@@ -3,7 +3,7 @@ package management
 import (
 	"testing"
 
-	"gopkg.in/auth0.v5"
+	"gopkg.in/jben94/auth0.v5"
 )
 
 func TestRuleConfig(t *testing.T) {

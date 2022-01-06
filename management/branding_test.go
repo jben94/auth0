@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"gopkg.in/auth0.v5"
-	"gopkg.in/auth0.v5/internal/testing/expect"
+	"gopkg.in/jben94/auth0.v5"
+	"gopkg.in/jben94/auth0.v5/internal/testing/expect"
 )
 
 func TestBranding(t *testing.T) {

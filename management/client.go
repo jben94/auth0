@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"gopkg.in/auth0.v5"
+	"gopkg.in/jben94/auth0.v5"
 )
 
 type Client struct {

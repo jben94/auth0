@@ -15,7 +15,7 @@ import (
 	"strings"
 
 	"golang.org/x/oauth2"
-	"gopkg.in/auth0.v5/internal/client"
+	"gopkg.in/jben94/auth0.v5/internal/client"
 )
 
 type ManagementOption func(*Management)
