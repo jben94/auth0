@@ -1,3 +1,7 @@
+# v5.21.1
+
+* `management.WithClientCredentials`: Change audience
+
 # v5.21.0
 
 * `management.ActionManager`: Update methods to adhere with conventions ([#247](https://github.com/go-auth0/auth0/pull/247))
