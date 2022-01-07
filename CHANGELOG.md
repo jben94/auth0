@@ -1,4 +1,4 @@
-# v5.21.1
+# v5.21.2
 
 * `management.WithClientCredentials`: Change audience
 
